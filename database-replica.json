@@ -1,0 +1,77 @@
+{
+  "development": {
+    "username": "app_user",
+    "password": "xDfUf9Yq7HPgGdss",
+    "username1": "postgres",
+    "password1": "123456",
+    "database": "sinplu_db",
+    "dialect": "postgres",
+    "params": {
+      "host": "20.0.0.161",
+      "host1": "127.0.0.1",
+      "port": 5432,
+      "pool": {
+        "min": 0,
+        "max": 15,
+        "idle": 10000
+      },
+      "dialect": "postgres",
+      "define": {
+        "underscored": true
+      }
+    },
+    "schema": "sinplu",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_seeders",
+    "migrationStorage": "sequelize",
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "test": {
+    "username": "agetic",
+    "password": "agetic",
+    "database": "sinpdb",    
+    "dialect": "postgres",
+    "params": {
+      "host": "127.0.0.1",
+      "port": 5432,
+      "pool": {
+        "min": 0,
+        "max": 15,
+        "idle": 10000
+      },
+      "dialect": "postgres",
+      "define": {
+        "underscored": true
+      }
+    },
+    "schema": "sinplu",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_seeders",
+    "migrationStorage": "sequelize",
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "production": {
+    "username": "agetic",
+    "password": "agetic",
+    "database": "sinpdb",    
+    "dialect": "postgres",
+    "params": {
+      "host": "127.0.0.1",
+      "port": 5432,
+      "pool": {
+        "min": 0,
+        "max": 15,
+        "idle": 10000
+      },
+      "dialect": "postgres",
+      "define": {
+        "underscored": true
+      }
+    },
+    "schema": "sinplu",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_seeders",
+    "migrationStorage": "sequelize",
+    "migrationStorageTableName": "sequelize_meta"
+  }
+}

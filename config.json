@@ -1,0 +1,199 @@
+{
+  "api": {
+    "main": "/api/v1"
+  },
+  "port": 4000,
+  "https": false,
+  "jwtSecret": "AGETIC2020",
+  "session": {
+    "accessToken": {
+      "expires": 300
+    },
+    "refreshToken": {
+      "expires": 1800
+    }
+  },
+  "personas": {
+    "mayorEdad": 18
+  },
+  "documentos": {
+    "consultas": 10,
+    "cosultasErroneas": 3,
+    "consultasValidacion": 5,
+    "actual": 0,
+    "rutas": [
+      "./docs"
+    ],
+    "secretKey": "vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3",
+    "borrador": "DOCUMENTO NO VÁLIDO",
+    "publico": "DOCUMENTO NO VÁLIDO"
+  },
+  "interoperabilidad": {
+    "validarToken": true,
+    "token": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzaW5wbHUiLCJpYXQiOjE2NDc5NTI0MjEsImV4cCI6MTY3OTQ4ODQyMSwiYXVkIjoiaW50ZXJvcGVyYWJpbGlkYWQiLCJzdWIiOiJjb25zdW1vIn0.HcwWV09kLEPGOmGbbsvuQpwWnwocV0UOuyNIFWLkLw0"
+  },
+  "plataformaPagos": {
+    "url1": "https://test.agetic.gob.bo",
+    "url2": "https://demo-ppte.agetic.gob.bo",
+    "url": "http://localhost:3003",
+    "path": "/pagos-api/",
+    "validarToken": false,
+    "tokenRegularizacion": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTSU5QTFUyMDIyIiwiaWF0IjoxNjU3MDQ3MTMxfQ.W0VGED3PDyYc85Ynxbb7PNeBZGqgkuRvWLrgsIKGy_U",
+    "viasVoluntarias": {
+      "tokenPago": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTSU5QTFUyMDIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.D_WiFnpGsWQdV1HJRVmbI9jwNFmiR93eMiy598nJqvE",
+      "cuenta": "11100003456789",
+      "jwtToken": "JWT eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBR0VUSUMiLCJpYXQiOjE2NDMwNTIwOTksImlkVXN1YXJpb0FwbGljYWNpb24iOjExOSwiaWRUcmFtaXRlIjoiMTE4MCJ9.ZKwBMLAIuiD1yn5_2EAwTRcJgvBQ6UK1_DLA8I71ADA"
+    },
+    "recargaSaldo": {
+      "tokenPago": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTSU5QTFUyMDIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.D_WiFnpGsWQdV1HJRVmbI9jwNFmiR93eMiy598nJqvE",
+      "cuenta": "11100003456789",
+      "jwtToken":"JWT eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBR0VUSUMiLCJpYXQiOjE2NDMwNTIwNzQsImlkVXN1YXJpb0FwbGljYWNpb24iOjEyMSwiaWRUcmFtaXRlIjoiMTE4NCJ9.vkLfLTkz767pPEGf24APhsxBsRZeSOTOx-6GWQ4PqQc"
+    },
+    "pagoSanciones": {
+      "tokenPago": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJTSU5QTFUyMDIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.D_WiFnpGsWQdV1HJRVmbI9jwNFmiR93eMiy598nJqvE",
+      "cuenta": "11100003456789",
+      "jwtToken":"JWT eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBR0VUSUMiLCJpYXQiOjE2NDMwNTIwOTksImlkVXN1YXJpb0FwbGljYWNpb24iOjExOSwiaWRUcmFtaXRlIjoiMTE4MCJ9.ZKwBMLAIuiD1yn5_2EAwTRcJgvBQ6UK1_DLA8I71ADA"
+    },
+    "costo": 1
+  },
+  "firma_digital": {
+    "url": "https://sinplu.test.gtic.gob.bo/firma/pdf/firma/",
+    "validarFirma": false
+  },
+  "validador_pdf":"http://localhost:8080/verificacion-documentos/",
+  "cifrado": {
+    "password": "9876543210",
+    "salt": "muNBxeV5q*ur~LZ-)JddhH6=m}]<HP#e*mn!#`4(.BR;wUxrqtkW<gwjJc%p%EC:"
+  },
+  "segip_soap": {
+    "url": "http://localhost:3333/wsdl?wsdl",
+    "codigo_institucion": "279",
+    "usuario": "asdf",
+    "contrasenia": "6549874",
+    "claveAccesoUsuarioFinal": "3215987",
+    "url_usuarios": "http://localhost:3333/wsdl?wsdls",
+    "usarBasePruebas": false,
+    "servicios": ["recuperacion", "contrastacion", "certificacion"]
+  },
+  "sereci_oep": {
+    "url": "https://interoperabilidadpruebas.oep.org.bo",
+    "path": "/oep-api/seguridad/v1/",
+    "usuario": "DIRNOPLU.5494626",
+	  "contrasenia": "DIRNOPLU.YCY57DV#B4VVB3I%1SHY1V6",
+    "usuarioEncriptado": "$2a$10$Wy/dIitdRemZG4bLRgzhCuHpdRgMmHTOneHPKYIL7JqMdg3oyGbyi",
+    "servicios": [""]
+  },
+  "fundempresa": {
+    "url1": "https://ws.agetic.gob.bo",
+    "url": "https://api-seprec.agcs.agetic.gob.bo",
+    "path1": "/api/servicios-iop/",
+    "path": "/seprec/v1/",
+    "tokenKong": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDY3VBU3BSZDJRNFVBZFE2ZUNrQThXUTZsYTZQQU5vUyIsInVzZXIiOiJhYWx2YXJhZG8iLCJleHAiOjE1MjQ2MDEwNTcsImlhdCI6MTUxNjgyNTA1OH0.t7zs7W-nhH4eGR5P8unGhPXWc53MqT4KKC3fGpElwUk"
+  },
+  "rpa": {
+    "enabled": false,
+    "url": "http://localhost:3003",
+    "path": "/rpa/buscar",
+    "tokenKong": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDY3VBU3BSZDJRNFVBZFE2ZUNrQThXUTZsYTZQQU5vUyIsInVzZXIiOiJhYWx2YXJhZG8iLCJleHAiOjE1MjQ2MDEwNTcsImlhdCI6MTUxNjgyNTA1OH0.t7zs7W-nhH4eGR5P8unGhPXWc53MqT4KKC3fGpElwUk"
+  },
+  "pdf": {
+    "url34": "https://sinplu-dev.dnp.gob.bo/pdf",
+    "urlsada": "http://reporter.prod.k8s.dirnoplu.gob.bo/pdf",
+    "url23": "http://localhost:8383",
+    "url1": "http://20.0.0.58:8383",
+    "url": "https://sinplu.test.gtic.gob.bo/pdf",
+    "urlReportes": "https://sinplu.test.gtic.gob.bo/pdf",
+    "urlReportes2": "http://reporter.prod.k8s.dirnoplu.gob.bo",
+    "urlReportes3": "https://sinplu-dev.dnp.gob.bo/pdf",
+    "urlReportesx": "http://20.0.0.58:8383",
+    "path": "/v2/pdf",
+    "paginasAdicionales": 50
+  },
+  "hashids": {
+    "salt": "193b49ba0a4ec244a400eaa0a485e490346c9460263fbcdfbac8e011e3a3bb70",
+    "padding": 10,
+    "alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  },
+  "openId": {
+    "ciudadaniaDigital": {
+      "jwtSecret": "rFXgUncUgaXxrsrURFABN",
+      "client_id": "VcsBthohX81WQZv9hvrxl",
+      "client_secret": "vYcGMCs8m_AEvOdwAiTZ9X1-Fvh1mmU-TG9eEgxweMkoCVm66nt47GmTpzYN5l8HcHnO__e6hIuJtd1hyt49wQ",
+      "issuerUrl": "https://cuenta.demo.gtic.gob.bo",
+      "hostUrl": "http://localhost:3000",
+      "hostCallback": "http://localhost:3000/cd-callback/login",
+      "hostLogoutCallback": "http://localhost:3000/cd-callback/logout",
+      "scope": "openid profile email fecha_nacimiento offline_access",
+      "clientTolerance": 600
+    }
+  },
+  "captcha": {
+    "cron": {
+      "habilitado": true,
+      "intervalo": "*/1 * * * *",
+      "minutos": 5
+    }
+  },
+  "vault": {
+    "token": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzaW5wbHUiLCJpYXQiOjE2NDc5NTI0MjEsImV4cCI6MTY3OTQ4ODQyMSwiYXVkIjoiaW50ZXJvcGVyYWJpbGlkYWQiLCJzdWIiOiJjb25zdW1vIn0.HcwWV09kLEPGOmGbbsvuQpwWnwocV0UOuyNIFWLkLw0",
+    "url": "http://localhost:3003/vault",
+    "version": "v1",
+    "tokenAppRoot": "s.r4z1jhfRk3OIyoTXLuRdUurP",
+    "tokenAppRoleStatic": "s.PxabwnqLlRSGPAP2gHpoNHwz",
+    "notariaSecrets": {
+        "pathSecretPrivate": "private",
+        "domainKVPath": "kv",
+        "policyDefault": "notaria-generica",
+        "pathAppRole": "approle",
+        "configDefaulAppRole": {
+          "token_ttl": "10m5s",
+          "token_max_ttl": "10m5s",
+          "token_num_uses": 1000,
+          "token_policies": "[\"notaria-generica\"]",
+          "period": 0,
+          "bind_secret_id": "true"
+        },
+        "timeCacheSecretNotaria": 120
+    },
+    "agent": {
+      "pathTokenBloqueado": "./VaultAgent/vault_token",
+      "timeReintentoDesbloqueo": 1000
+    },
+    "aliasCacheTokenAppRole": "tokenAppRole"
+  },
+
+  "sereci": {
+    "siglaEntidad": "DIRNOPLU",
+    "url": "https://interoperabilidadpruebas.oep.org.bo/oep-api/seguridad/v1/",
+    "urlEstadoCivil": "https://interoperabilidadpruebas.oep.org.bo/oep-api/consulta/v1/estadocivil",
+    "codigo_institucion": "279",
+    "usuario": "DIRNOPLU.5494626",
+    "contrasenia": "DIRNOPLU.YCY57DV#B4VVB3I%1SHY1V6",
+    "dependenciaEntidad": "Oficina Central",
+    "usuario_encriptado": "$2a$10$Wy/dIitdRemZG4bLRgzhCuHpdRgMmHTOneHPKYIL7JqMdg3oyGbyi",
+    "email": "dirnoplu@dirnoplu.gob.bo",
+    "servicios": [
+      "recuperacion",
+      "búsqueda ceriticado defuncion",
+      "certificacion"
+    ],
+    "path": {
+      "autenticacion": "authentication",
+      "autenticacion1": "dependenciasentidad/",
+      "autenticacion3": "perfilesentidad/",
+      "autenticacion4": "perfilesentidadusuario/",
+      "autenticacion5": "modificarusuariofinal/",
+      "autenticacion6": "registrarusuariofinal/",
+      "modificar_usuario_final": "modificarusuariofinal",
+      "autentiar_usuario_final": "usuariofinal",
+      "consulta_estado_civil": "estadocivil",
+      "dependenciaEntidad": "Oficina Central",
+      "busqueda_certificado_defuncion": "busquedacertificado"
+    },
+    "listaPerfilEntidad": {
+      "identificadorPerfil": "Búsqueda de registro estado civil",
+      "identificadorPerfil2": "Busqueda de certificado de defunción"
+    }
+  }
+
+}
